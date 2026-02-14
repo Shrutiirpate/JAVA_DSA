@@ -92,6 +92,8 @@ public class DataType2 {
         numF  = 20.0005f;
         System.out.println(numF);
 
+
+
     }
 }
 
