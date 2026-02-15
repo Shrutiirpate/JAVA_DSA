@@ -66,5 +66,23 @@ public class operators {
         pa /= sh; //pa = pa / sh (pa = 100 / 10 = 10)
         System.out.println(pa);//10
 
+        // Unary operator
+        int D = 5;
+        int A = 5;
+
+        System.out.println(D++);//5 it is post increment that's why first assign and then increment
+        System.out.println(D);//6 and here the increment is done
+
+        System.out.println(++A);//6 it is pre increment 1st increment and then assign
+        System.out.println(A);//6
+
+        int X = D++;
+        int Y = ++A;
+
+        System.out.println(X);//6 post increment by 1 fist assign
+        System.out.println(Y);//7
+
+        System.out.println(D);//7 post increment , increment done here
+        System.out.println(A);//7
     }
 }
