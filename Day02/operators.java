@@ -100,6 +100,15 @@ public class operators {
         System.out.println("Rightshift " + (b >> 1));//101 = 5
         System.out.println("Rightshift " + (b >> 2));//10 = 2
 
-
+        System.out.println(11 & 9); //9
+        System.out.println(8 | 13); //13
+        System.out.println(4 << 1); //1000 8
+        System.out.println(4 << 2); //10000 16
+        System.out.println(2 << 1); //4
+        System.out.println(2 << 2); //8
+        System.out.println(8 << 1); //4
+        System.out.println(8 << 2); //8
+        System.out.println(7 << 1); //4
+        System.out.println(7 << 2); //8
     }
 }
