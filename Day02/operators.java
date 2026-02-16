@@ -84,5 +84,22 @@ public class operators {
 
         System.out.println(D);//7 post increment , increment done here
         System.out.println(A);//7
+
+        //Bitwise Operator
+        int a = 9; //1001
+        int b = 10; //1010
+
+        System.out.println("bitwise OR " + (a | b));//1001 1010 = 1011 = 11
+        System.out.println("bitwise AND & " + ( a & b));//1001 1010 = 1000 = 8
+        System.out.println("bitwise  exclusive OR ^ " + ( a ^ b));//1001 1010 = 0011 = 3( if same bit  = 0, different bit =1) 1 1 = 0, 0 0=0, 1 0 = 1.
+        System.out.println("bitwise complement ~ " + (~ b));//0101 (it converts 1 into 0 or 0 into 1)
+
+        System.out.println("Leftshift " +( a << 1));// 1001 after 1 left shift it will be 10010 = 18
+        System.out.println("Leftshift " + (a << 2));// 1001 after 2 left shift it will be 100100 = 36
+
+        System.out.println("Rightshift " + (b >> 1));//101 = 5
+        System.out.println("Rightshift " + (b >> 2));//10 = 2
+
+
     }
 }
