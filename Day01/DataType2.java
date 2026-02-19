@@ -6,12 +6,12 @@ public class DataType2 {
 
     public static void main(String[] args) {
 
-        byte age = 22;
-        int rollNo = 101;
-        long mobile = 8080267174L;
-        float percentage = 85.5f;
-        double height = 5.4;
-        char grade = 'A';
+        byte age = 22; //byte range -128 to 127 1byte= 8bits
+        int rollNo = 101; //-2147483647 to 2147483646 4byte=32bits
+        long mobile = 8080267174L; //8bytes=64 bites
+        float percentage = 85.5f;  //4bytes = 32bits
+        double height = 5.4;       //8bytes = 64bits
+        char grade = 'A';          //2 bytes = 16 bits
 
         System.out.println("Age: " + age);
         System.out.println("Roll No: " + rollNo);
@@ -41,7 +41,7 @@ public class DataType2 {
         short sh1 = 19;
         short sh2= 11;
 
-        int sh3 = sh1 + sh2;     // here we perform arithmetic operation like addition so java automatically converts short, byte,char into int.that why here print additon of 19+11=30. it is called type promotion.
+        int sh3 = sh1 + sh2;     // here we perform arithmetic operation like addition so java automatically converts short, byte,char into int.that's why here print additon of 19+11=30. it is called type promotion.
         System.out.println(sh3); //30
 
         //short sh3 = sh1 + sh2; // it shows error because Even if both are short,Java automatically changes them into int while calculating.

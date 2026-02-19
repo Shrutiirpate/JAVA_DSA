@@ -9,7 +9,7 @@ public class IfElseQuestions1 {
 //        Output: 5 is a positive number.
 //        Input:  num = -9;
 //        Output: -9 is a negative number.
-//
+
 //        Scanner sc = new Scanner(System.in);
 //        System.out.print("Enter a Number: ");
 //        int num = sc.nextInt();
@@ -23,14 +23,14 @@ public class IfElseQuestions1 {
 //        }else{
 //            System.out.println(num + " is a negative number");
 //        }
-       //---------------------------------------------------------------------------
+        //---------------------------------------------------------------------------
 
 //        2. Write a program to check whether the given number is even or odd
 //        Input: num =13;
 //        Output: 13 is an odd number
 //        Input: num =8;
 //        Output: 8 is an even number
-//
+
 //        Scanner AB = new Scanner(System.in);
 //
 //        System.out.print("Enter a Number: ");
@@ -41,8 +41,8 @@ public class IfElseQuestions1 {
 //        }else{
 //            System.out.println(num1 + " number is a odd number");
 //        }
-    //---------------------------------------------------------------------------
-//
+        //---------------------------------------------------------------------------
+
 //         3. Write a program to check whether the given number is less than 10 or greater than 10.
 //        Input: num =13;
 //        Output: 13 is greater than 10.
@@ -65,7 +65,7 @@ public class IfElseQuestions1 {
 //        }else{
 //            System.out.println(number + " is less than 10");
 //        }
-            //---------------------------------------------------------------------------
+        //---------------------------------------------------------------------------
 
 //            4. Write a program to check whether the given Character is in UPPERCASE (Capital) or
 //            in lowercase. (take hardcoded values)
@@ -207,39 +207,102 @@ public class IfElseQuestions1 {
 //        Input: 13
 //        Output: Invalid input for month
 
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the number: ");
-        int month = sc.nextInt();
+//        Scanner sc = new Scanner(System.in);
+//        System.out.print("Enter the number: ");
+//        int month = sc.nextInt();
+//
+//        if(month ==1){
+//            System.out.println("January");
+//        }else if(month == 2){
+//            System.out.println("February");
+//        }else if(month == 3){
+//            System.out.println("March");
+//        }else if(month == 4){
+//            System.out.println("April");
+//        }else if(month ==5){
+//            System.out.println("May");
+//        } else if (month == 6) {
+//            System.out.println("June");
+//        }else if(month == 7){
+//            System.out.println("July");
+//        }else if(month == 8){
+//            System.out.println("August");
+//        }else if(month == 9){
+//            System.out.println("september");
+//        }else if(month == 10){
+//            System.out.println("october");
+//        }else if(month == 11){
+//            System.out.println("November");
+//        }else if(month == 12){
+//            System.out.println("December");
+//        }else{
+//            System.out.println(month + " Invalid input for month");
+//        }
 
-        if(month ==1){
-            System.out.println("January");
-        }else if(month == 2){
-            System.out.println("February");
-        }else if(month == 3){
-            System.out.println("March");
-        }else if(month == 4){
-            System.out.println("April");
-        }else if(month ==5){
-            System.out.println("May");
-        } else if (month == 6) {
-            System.out.println("June");
-        }else if(month == 7){
-            System.out.println("July");
-        }else if(month == 8){
-            System.out.println("August");
-        }else if(month == 9){
-            System.out.println("september");
-        }else if(month == 10){
-            System.out.println("october");
-        }else if(month == 11){
-            System.out.println("November");
-        }else if(month == 12){
-            System.out.println("December");
-        }else{
-            System.out.println(month + " Invalid input for month");
+        //-----------------------------------------------------------
+
+//        Scanner sc = new Scanner(System.in);
+//        System.out.print("Enter number: ");
+//
+//        int num = sc.nextInt();
+//
+//        if(num%2==0 || num%3==0 || num%5==0 || num%7==0){
+//            System.out.println(num + " is Not a Prime Number");
+//        }else{
+//            System.out.println(num + " is a Prime number");
+//        }
+
+        //-----------------------------------------------------
+//        Scanner sc = new Scanner(System.in);
+//        System.out.print("Enter age:");
+//
+//        int age = sc.nextInt();
+//
+//        if(age<1){
+//            System.out.println("age is not valid");
+//        }else if(age<=5){
+//            System.out.println(" you are a toddler");
+//        }else if(age<=12){
+//            System.out.println(" you are a child");
+//        }else if(age<=18){
+//            System.out.println(" you are a teen");
+//        }else if(age<=30){
+//            System.out.println(" you are a adult");
+//        }else{
+//            System.out.println( " Senior");
+//        }
+        //---------------------------------
+        //Leap year code
+//        Scanner sc = new Scanner(System.in);
+//        System.out.print("Enter year: ");
+//
+//        int year = sc.nextInt();
+//
+//        if (year % 4 == 0) {
+//            if (year % 100 == 0) {
+//                if (year % 400 == 0) {
+//                    System.out.println(year + " is a Leap year");
+//                } else {
+//                    System.out.println(year + " is not a Leap year");
+//                }
+//            } else{
+//                System.out.println(year + " is a leap year");
+//            }
+//            }else{
+//            System.out.println(year + " is a not leap year");
+//        }
+        //---------------------------------------
+
+        //question-6(using ternory operator
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter num: ");
+        int number5 = sc.nextInt();
+
+        String ans;
+        ans = (number5 % 2 ==0)?"Even":"Odd";
+        System.out.println(ans);
         }
     }
-}
 
 
 
