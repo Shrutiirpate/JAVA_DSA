@@ -332,15 +332,6 @@ public class SwitchCase {
                 System.out.println("Invalid marks");
         }
 
-
-
-
-
-
-
-
-
-
         }
     }
 
