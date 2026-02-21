@@ -9,6 +9,7 @@ public class SwitchCase {
         System.out.println("Enter language: ");
 
         int lang = sc.nextInt();
+        
 
         switch(lang){
             case 1:
