@@ -1,33 +1,32 @@
 package Day04;
-
 import java.util.Scanner;
 
 public class SwitchCase {
 
     public static void main(String[]args) {
 
-//        Scanner sc = new Scanner(System.in);
-//        System.out.println("Enter language: ");
-//
-//        int lang = sc.nextInt();
-//
-//        switch(lang){
-//            case 1:
-//                System.out.println("java course");
-//                System.out.println("Includes: Java,DSA,OS,OOP");
-//                break;
-//            case 2:
-//                System.out.println("Python course");
-//                System.out.println("Includes: Pyhton,IOT,Ml,AI");
-//                break;
-//            case 3:
-//                System.out.println("Flutter course");
-//                System.out.println("Includes: Dart,flutter");
-//                break;
-//            default:
-//                System.out.println("Invalid course");
-//
-//        }
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter language: ");
+
+        int lang = sc.nextInt();
+
+        switch(lang){
+            case 1:
+                System.out.println("java course");
+                System.out.println("Includes: Java,DSA,OS,OOP");
+                break;
+            case 2:
+                System.out.println("Python course");
+                System.out.println("Includes: Pyhton,IOT,Ml,AI");
+                break;
+            case 3:
+                System.out.println("Flutter course");
+                System.out.println("Includes: Dart,flutter");
+                break;
+            default:
+                System.out.println("Invalid course");
+
+        }
         //----------------------------------------------------------------
 
 //        int x = 3;
@@ -331,23 +330,23 @@ public class SwitchCase {
 //            default:
 //                System.out.println("Invalid marks");
 //        }
-         double X = 25.5;
-         switch(X){
-             case 5.5:
-                 System.out.println("5.5");
-                 break;
-             case 15.5:
-                 System.out.println("15.5");
-                 break;
-             case 25.5:
-                 System.out.println("25.5");
-                 break;
-             case 35.5:
-                 System.out.println("35.5");
-                 break;
-             default:
-                 System.out.println("Invalid input");
-         }
+//         double X = 25.5;
+//         switch(X){
+//             case 5.5:
+//                 System.out.println("5.5");
+//                 break;
+//             case 15.5:
+//                 System.out.println("15.5");
+//                 break;
+//             case 25.5:
+//                 System.out.println("25.5");
+//                 break;
+//             case 35.5:
+//                 System.out.println("35.5");
+//                 break;
+//             default:
+//                 System.out.println("Invalid input");
+//         }
          //we can use swtich using wihtout break in JDK 12.
 
         }
