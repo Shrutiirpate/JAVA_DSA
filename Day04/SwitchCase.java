@@ -9,7 +9,7 @@ public class SwitchCase {
         System.out.println("Enter language: ");
 
         int lang = sc.nextInt();
-        
+
 
         switch(lang){
             case 1:
@@ -349,6 +349,7 @@ public class SwitchCase {
 //                 System.out.println("Invalid input");
 //         }
          //we can use swtich using wihtout break in JDK 12.
+        sc.close();
 
         }
     }
