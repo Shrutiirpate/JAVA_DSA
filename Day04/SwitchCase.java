@@ -276,61 +276,79 @@ public class SwitchCase {
         //fail in any subject, the program should print “Y ou failed the exam”.
         //Now you have to use if else and switch both in the same code
 
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter marks sub1: ");
-        int sub1 = sc.nextInt();
-
-        System.out.print("Enter marks sub2: ");
-        int sub2 = sc.nextInt();
-
-        System.out.print("Enter marks: ");
-        int sub3 = sc.nextInt();
-
-        System.out.print("Enter marks: ");
-        int sub4 = sc.nextInt();
-
-        System.out.print("Enter marks: ");
-        int sub5 = sc.nextInt();
-
-        int sum = sub1 + sub2 + sub3 + sub4 + sub5;
-
-        if(sub1<35 || sub2<35 || sub3<35 || sub4<35 || sub5<35) {
-            System.out.println("You failed the exam");
-            return;
-        }
-
-        char Grade = 'f';
-        if(sum >= 450 && sum <= 500){
-            Grade = 'A';
-        }else if(sum >= 350){
-            Grade = 'B';
-        }else if(sum >= 250){
-            Grade = 'C';
-        }else if(sum >= 170){
-            Grade = 'D';
-        }else if(sum >= 0){
-            Grade = 'F';
-        }
-
-        switch(Grade){
-            case 'A':
-                System.out.print("first class with distinction");
-                break;
-            case 'B':
-                System.out.print("first class");
-                break;
-            case 'C':
-                System.out.print("second class");
-                break;
-            case 'D':
-                System.out.println("Third class");
-                break;
-            case 'F':
-                System.out.println("Fail");
-                break;
-            default:
-                System.out.println("Invalid marks");
-        }
+//        Scanner sc = new Scanner(System.in);
+//        System.out.print("Enter marks sub1: ");
+//        int sub1 = sc.nextInt();
+//
+//        System.out.print("Enter marks sub2: ");
+//        int sub2 = sc.nextInt();
+//
+//        System.out.print("Enter marks: ");
+//        int sub3 = sc.nextInt();
+//
+//        System.out.print("Enter marks: ");
+//        int sub4 = sc.nextInt();
+//
+//        System.out.print("Enter marks: ");
+//        int sub5 = sc.nextInt();
+//
+//        int sum = sub1 + sub2 + sub3 + sub4 + sub5;
+//
+//        if(sub1<35 || sub2<35 || sub3<35 || sub4<35 || sub5<35) {
+//            System.out.println("You failed the exam");
+//            return;
+//        }
+//
+//        char Grade = 'f';
+//        if(sum >= 450 && sum <= 500){
+//            Grade = 'A';
+//        }else if(sum >= 350){
+//            Grade = 'B';
+//        }else if(sum >= 250){
+//            Grade = 'C';
+//        }else if(sum >= 170){
+//            Grade = 'D';
+//        }else if(sum >= 0){
+//            Grade = 'F';
+//        }
+//
+//        switch(Grade){
+//            case 'A':
+//                System.out.print("first class with distinction");
+//                break;
+//            case 'B':
+//                System.out.print("first class");
+//                break;
+//            case 'C':
+//                System.out.print("second class");
+//                break;
+//            case 'D':
+//                System.out.println("Third class");
+//                break;
+//            case 'F':
+//                System.out.println("Fail");
+//                break;
+//            default:
+//                System.out.println("Invalid marks");
+//        }
+         double X = 25.5;
+         switch(X){
+             case 5.5:
+                 System.out.println("5.5");
+                 break;
+             case 15.5:
+                 System.out.println("15.5");
+                 break;
+             case 25.5:
+                 System.out.println("25.5");
+                 break;
+             case 35.5:
+                 System.out.println("35.5");
+                 break;
+             default:
+                 System.out.println("Invalid input");
+         }
+         //we can use swtich using wihtout break in JDK 12.
 
         }
     }
