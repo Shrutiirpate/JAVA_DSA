@@ -155,7 +155,6 @@ public class WhileLoop {
 //            int digit = num % 10;
 //            multiply = multiply * digit;
 //            num = num / 10;
-//
 //        }
 //        System.out.println("multuply of a number: " + multiply);
     }
