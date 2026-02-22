@@ -101,19 +101,62 @@ public class WhileLoop {
 //                  System.out.println(num);
 //                  num++;
 //        }
-        //Print only odd numbers from 1 to 50.
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter number: ");
-        int n = sc.nextInt();
-        int num = 1;
+//        //Print only odd numbers from 1 to 50.
+//        Scanner sc = new Scanner(System.in);
+//        System.out.print("Enter number: ");
+//        int n = sc.nextInt();
+//        int num = 1;
+//
+//        while(num <= 50){
+//              if(num % 2 !=0)
+//                  System.out.println(num);
+//              num++;
+//       }
+// --------------------------------------------------------------
+        //Count how many digits are present in a given number.
+        //Example: 12345 → Output: 5
+//        Scanner sc = new Scanner(System.in);
+//        System.out.print("Enter number: ");
+//        int n = sc.nextInt();
+//        int i = 0;
+//
+//        while(n != 0){
+//            n = n / 10;
+//            i++;
+//        }
+//        System.out.println(i);
 
-        while(num <= 50){
-              if(num % 2 !=0)
-                  System.out.println(num);
-              num++;
-        }
-
-
-
+        //-----------------------------------------------------------------------
+        //Find the factorial of a number.
+        //Example: 5 → 5 × 4 × 3 × 2 × 1
+//        Scanner sc = new Scanner(System.in);
+//        System.out.print("Enter number: ");
+//        int n = sc.nextInt();
+//        int fact = 1;
+//        while(n > 0){
+//            fact = fact * n;
+//            n--;
+//        }
+//        System.out.println(fact);
+        //-----------------------------------------------------------------------
+        //Find the product of digits of a number.
+        //Example: 123 → 1×2×3 = 6
+//        Scanner sc = new Scanner(System.in);
+//        System.out.print("Enter number: ");
+//        int num = sc.nextInt();
+//
+////        num = Math.abs(num);
+////
+////        int multiply = (num == 0) ? 0 : 1;
+//
+//        int multiply = 1;
+//
+//        while(num > 0){
+//            int digit = num % 10;
+//            multiply = multiply * digit;
+//            num = num / 10;
+//
+//        }
+//        System.out.println("multuply of a number: " + multiply);
     }
 }
