@@ -61,6 +61,7 @@ public class forloop {
 //                System.out.println(i);
 //            }
 //        }
+        //-----------------------------------------------------------------------------------------
 //        //6. Write a program to print the numbers in reverse order from ‘N’- 10.Where N is
 //        //user given number.
 //        //Input:
@@ -69,12 +70,69 @@ public class forloop {
 //        Scanner sc = new Scanner(System.in);
 //        System.out.println("Enter number: ");
 //        int N = sc.nextInt();
-//
-//        for(int i =N; i>=; i--){
+//        for(int i = N; i>=10; i--){
 //                System.out.println(i);
 //        }
+        //---------------------------------------------------------------------------------------------
+        //7. Write a program to print a table of ‘N’. Where N is user given number.
+        //Input:
+        //N=17
+        //Output: 17,34,51,68,...170
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter number: ");
+//        int num = sc.nextInt();
+//
+//        for(int i =1; i<=10; i++){
+//
+//                System.out.println(num * i);
+//        }
+        //----------------------------------------------------------------
+        //8. Write a program to print a table of ‘N’ in reverse order. Where N is user given
+        //number.
+        //Input:
+        //N=14
+        //Output: 140, 126, 112, ..14
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter number: ");
+//        int num = sc.nextInt();
+//
+//        for(int i=10; i>=1; i--){
+//            System.out.println(num*i);
+//        }
+        //--------------------------------------------------------------------------
+        //9. Write a program to print the sum of the first ‘N’ natural numbers. Where N is user
+        //given number.
+        //Input:
+        //N=10
+        //Output:55
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter number: ");
+//        int num = sc.nextInt();
+//        int sum = 0;
+//
+//        for(int i=1; i<=num; i++){
+//            sum += i;//sum = sum + i
+//        }
+//        System.out.println(sum);
 
-
+        //---------------------------------------------------------------------------------
+        //10. Write a program to print the count of odd numbers between 1 And ‘N’. Where N
+        //is user given number.
+        //Input:
+        //N=10
+        //Output:
+        //Count of odd numbers:(PENDING)
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter number: ");
+//        int num = sc.nextInt();
+//
+//
+//        for(int i =1; i<=num; i++) {
+//            if (i % 2 != 0) {
+//                System.out.println(i);
+//            }
+//
+//        }
 
 
     }
