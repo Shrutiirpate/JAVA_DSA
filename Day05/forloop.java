@@ -121,18 +121,30 @@ public class forloop {
         //Input:
         //N=10
         //Output:
-        //Count of odd numbers:(PENDING)
+        //Count of odd numbers:
 //        Scanner sc = new Scanner(System.in);
 //        System.out.println("Enter number: ");
 //        int num = sc.nextInt();
-//
+//        int count = 0;
 //
 //        for(int i =1; i<=num; i++) {
-//            if (i % 2 != 0) {
-//                System.out.println(i);
-//            }
+//            if (i % 2 != 0)
+//                count++;
 //
-//        }
+//        } System.out.println("Count od odd number: " + count);
+        //--------------------------------------------------------------------
+        //factorial
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter number: ");
+        int num = sc.nextInt();
+        int fact = 1;
+
+        for(int i =1; i<=num; i++) {
+            fact = fact * i;
+            System.out.println("Factorail of " + i  + " : "+ fact);
+
+
+        }
 
 
     }
