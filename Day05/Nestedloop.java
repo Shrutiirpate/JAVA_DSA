@@ -33,16 +33,55 @@ public class Nestedloop {
 //            System.out.println( );
 //        }
         //-------------------------------------------------------------------
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter row: ");
+//        Scanner sc = new Scanner(System.in);
+//        System.out.print("Enter row: ");
+//        int row = sc.nextInt();
+//
+//        for(int i=1; i<=row; i++){
+//            for(int j=1; j<=i; j++){
+//            System.out.print("* ");
+//        }
+//        System.out.println();
+//
+//    }}
+        //--------------------------------------------------------------------
+        //(Shruti type)
+//        Scanner sc = new Scanner(System.in);
+//        System.out.print("Enter row: ");
+//        int row = sc.nextInt();
+//
+//        for(int i=row; i>=1; i--){
+//            for(int j=i; j>=1; j--){
+//                System.out.print("* ");
+//            }
+//            System.out.println();
+//
+//        }}
+    //------------------------------------------------------------------
+        //(CW type)
+//    Scanner sc = new Scanner(System.in);
+//    System.out.print("Enter row: ");
+//    int row = sc.nextInt();
+//
+//        for(int i=1; i<=row; i++){
+//        for(int j=1; j<=(row +1 - i); j++){
+//            System.out.print("* ");
+//        }
+//        System.out.println();
+//
+//    }//------------------------------------------------------------------------------------
+    Scanner sc = new Scanner(System.in);
+        System.out.println("Enter row: ");
         int row = sc.nextInt();
 
         for(int i=1; i<=row; i++){
-            for(int j=1; j<=i; j++){
-            System.out.print("* ");
+            for(int j=1; j<=row-i; j++){ //for blank spaces
+                System.out.print(" ");
+            }for(int k=1; k<=2*i-1; k++){ //2*i-1 it print *
+                System.out.print("*");
+            }
+            System.out.println();
         }
-        System.out.println();
-
-    }}
-
+  }
 }
+
