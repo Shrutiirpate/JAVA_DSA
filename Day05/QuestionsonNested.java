@@ -165,6 +165,65 @@ public class QuestionsonNested {
         //1A  2B  3C
         //1A  2B  3C
         //1A  2B  3C
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter row: ");
+//        int row = sc.nextInt();
+//
+//        System.out.println("Enter col: ");
+//        int col = sc.nextInt();
+//
+//
+//        for(int i=1; i<=row; i++){
+//            char ch ='A';
+//            int num = 1;
+//
+//            for(int j=1; j<=col; j++) {
+//                System.out.print(num +""+ ch + " ");
+//                num++;
+//                ch++;
+//            }
+//            System.out.println(  );
+//        }
+        //----------------------------------------------------------------------------------
+        //Question 9:- Write a program to print the following pattern
+        //Number of rows = 3
+        //1  2  3
+        //3  4  5
+        //5  6  7
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter row: ");
+//        int row = sc.nextInt();
+//
+//        System.out.println("Enter col: ");
+//        int col = sc.nextInt();
+//
+//        int num = 1;
+//        for(int i=1; i<=row; i++){
+//            for(int j=1; j<=col; j++) {
+//                System.out.print(num + " ");
+//                num++;
+//            }
+//            System.out.println(  );
+//        }
+        //----------------------------------------------------------------------------------------------
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter row: ");
+//        int row = sc.nextInt();
+//
+//        System.out.println("Enter col: ");
+//        int col = sc.nextInt();
+//
+//
+//        for(int i=1; i<=row; i++) {
+//            for (int j = i; j <= row; j++) {
+//                System.out.print(j);
+//            }
+//            for (int k = 1; k <= i - 1; k++) {
+//                System.out.print(k);
+//            }
+//            System.out.println();
+//        }
+        //------------------------------------------------------------------------------------
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter row: ");
         int row = sc.nextInt();
@@ -172,23 +231,15 @@ public class QuestionsonNested {
         System.out.println("Enter col: ");
         int col = sc.nextInt();
 
-
         for(int i=1; i<=row; i++){
-            char ch ='A';
-            int num = 1;
-
             for(int j=1; j<=col; j++) {
-                System.out.print(num +""+ ch + " ");
-                num++;
-                ch++;
-
-
-
+                if (i == 1 || i == row || j == 1 || j == col) {
+                    System.out.print(j + " ");
+                } else
+                    System.out.print("   ");
             }
-            System.out.println(  );
+            System.out.println(   );
         }
-
-
 
     }
 }
