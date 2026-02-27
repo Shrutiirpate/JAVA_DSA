@@ -224,6 +224,58 @@ public class QuestionsonNested {
 //            System.out.println();
 //        }
         //------------------------------------------------------------------------------------
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter row: ");
+//        int row = sc.nextInt();
+//
+//        System.out.println("Enter col: ");
+//        int col = sc.nextInt();
+//
+//        for(int i=1; i<=row; i++){
+//            for(int j=1; j<=col; j++) {
+//                if (i == 1 || i == row || j == 1 || j == col) {
+//                    System.out.print(j + " ");
+//                } else
+//                    System.out.print("   ");
+//            }
+//            System.out.println(   );
+//        }
+//----------------------------------------------------------------------------------------
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter row: ");
+//        int row = sc.nextInt();
+//
+//        System.out.println("Enter col: ");
+//        int col = sc.nextInt();
+//
+//        for(int i=1; i<=row; i++){
+//            for(int j=1; j<=col; j++) {
+//                if((i+j) % 2 == 0){
+//                    System.out.print(1);
+//                }else
+//                    System.out.print(2);
+//            }
+//
+//            System.out.println(   );
+//        }
+        //--------------------------------------------------------------------
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter row: ");
+//        int row = sc.nextInt();
+//
+////        System.out.println("Enter col: ");
+////        int col = sc.nextInt();
+//
+//        for(int i=1; i<=row; i++){
+//            for(int j=1; j<=i; j++) {
+//
+//                    System.out.print(j);
+//            }
+//
+//            System.out.println(   );
+//        }
+//
+        //-----------------------------------------------------------------------------
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter row: ");
         int row = sc.nextInt();
@@ -231,14 +283,15 @@ public class QuestionsonNested {
         System.out.println("Enter col: ");
         int col = sc.nextInt();
 
-        for(int i=1; i<=row; i++){
-            for(int j=1; j<=col; j++) {
-                if (i == 1 || i == row || j == 1 || j == col) {
-                    System.out.print(j + " ");
-                } else
-                    System.out.print("   ");
+
+        for(int i=1; i<=row; i++) {
+            for (int j = i; j <= row; j++) {
+                System.out.print(j);
             }
-            System.out.println(   );
+            for (int k = 1; k <= i - 1; k++) {
+                System.out.print(k);
+            }
+            System.out.println();
         }
 
     }
