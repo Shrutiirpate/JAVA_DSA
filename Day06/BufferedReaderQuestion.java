@@ -1,31 +1,3 @@
-//package Day06;
-
-//import java.io.IOException;
-//import java.io.InputStreamReader;
-//
-//public class BufferedReaderQuestion {
-//    public static void main(String[] args)throws IOException {
-//        BufferedReaderQuestion br = new BufferedReaderQuestion(new InputStreamReader(System.in));
-//
-//        System.out.println("Enter society number: ");
-//        String socName = br.readLine();
-//
-//        System.out.println("Enter wing Name: ");
-//        char wingName = br.readLine().charAt(0);
-//
-//        System.out.println("Enter flat num: ");
-//        int flatNum = Integer.parseInt(br.readLine());
-//
-//        System.out.println("Enter flat Rent: ");
-//        Float rent = float.parseFloat(br.readLine());
-//
-//        System.out.println("Name of society: " + socName);
-//        System.out.println("Name of wing: " + wingName);
-//        System.out.println("Name of flat: "+ flatNum);
-//        System.out.println("Flat rent: " + rent);
-//    }
-//
-//}
 package Day06;
 
 import java.io.BufferedReader;
@@ -35,24 +7,24 @@ import java.io.IOException;
 public class BufferedReaderQuestion {
     public static void main(String[] args) throws IOException {
 
-        BufferedReader br = new BufferedReader(
-                new InputStreamReader(System.in));
 
-        System.out.println("Enter society number: ");
-        String socName = br.readLine();
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.println("Enter wing Name: ");
+        System.out.println("Enter Society Name: ");
+        String socName = br.readLine(); //This reads the input from the user.(br.readLine)....
+
+        System.out.println("Enter wing name: ");
         char wingName = br.readLine().charAt(0);
 
-        System.out.println("Enter flat num: ");
-        int flatNum = Integer.parseInt(br.readLine());
+        System.out.println("Enter flat number: ");
+        int flatNumber = Integer.parseInt(br.readLine());//But BufferedReader always reads input as a String.Integer.parseInt().This method converts a String into an int value.
 
-        System.out.println("Enter flat Rent: ");
-        float rent = Float.parseFloat(br.readLine());
+        System.out.println("Enter flat rent: ");
+        Float flatRent = Float.parseFloat(br.readLine());
 
-        System.out.println("Name of society: " + socName);
-        System.out.println("Name of wing: " + wingName);
-        System.out.println("Name of flat: " + flatNum);
-        System.out.println("Flat rent: " + rent);
+        System.out.println("Society Name: " + socName);
+        System.out.println("Society Wing name: " + wingName);
+        System.out.println("Society flat number: " + flatNumber);
+        System.out.println("Society flat Rent: " + flatRent);
     }
 }
