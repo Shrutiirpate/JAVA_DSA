@@ -1,5 +1,44 @@
 package Day07;
 class ArrayExample {
+    //SearchInIndex
+    void searchIndex(){
+        int [] index = { 1,2,5,7,9};
+        int x =5;
+
+        int ans = -1;
+        for(int i=0; i<index.length; i++){
+            if(index[i]==x){
+                ans = i;
+            }
+        }
+        System.out.println("Found " + x + " at the position " + ans);
+    }
+
+    //find Max number in a given array
+    void maxArray(){
+        int [] aar2 = {1, 4 ,3 , 8,1};
+        int ans = 0;
+
+        for(int i=0; i < aar2.length; i++){
+            if(aar2[i] > ans){
+                ans = aar2[i];
+
+            }
+        }
+        System.out.println("Max: " + ans);
+    }
+    //Print sum of Array
+    void sumofArray(){
+        int [] arr = {1 ,4 ,5 ,6 ,1};
+        int sum = 0;
+
+        for(int i=0; i< arr.length; i++){
+            //System.out.println(arr[i]);
+            sum = sum + arr[i];
+        }
+        System.out.println(sum);
+    }
+    //Multi array or 2D Array
     void multiArray(){
         int[][] number = {{55,61, 8},{22,34,9},{54,88,5} };//2D Array
 
@@ -23,7 +62,7 @@ class ArrayExample {
 
     }
 
-
+    //Array
     void demoArray() {
         int[] ages = new int[3];
         float[] weight = new float[3];
@@ -87,7 +126,10 @@ public class Array {
     public static void main(String[] args) {
         ArrayExample obj = new ArrayExample();
         //obj.demoArray();
-        obj.multiArray();
+       // obj.multiArray();
+        //bj.sumofArray();
+        //obj.maxArray();
+        obj.searchIndex();
     }
 
 }
