@@ -59,7 +59,6 @@ class ArrayExample {
 //        System.out.println(number[2][0]);//54
 //        System.out.println(number[2][1]);//88
 //        System.out.println(number[2][2]);//5
-
     }
 
     //Array
@@ -114,11 +113,9 @@ class ArrayExample {
            // i = i + 1;
             i++;
         }
-
         System.out.println("Length of array ages: " + ages.length);//3
         System.out.println("Length of array name: " + name.length);//3
         System.out.println("Length of array weight: " + weight.length);//3
-
     }
     }
 
