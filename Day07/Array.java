@@ -11,6 +11,7 @@ class ArrayExample {
                 ans = i;
             }
         }
+
         System.out.println("Found " + x + " at the position " + ans);
     }
 
@@ -105,6 +106,7 @@ class ArrayExample {
         for(int age : ages){
             System.out.println(age);
         }
+
 
         //Array Print Using While Loop
         int i = 0;
