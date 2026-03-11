@@ -195,6 +195,7 @@ public class DArray{
         //System.out.println("Count of X "+ countnumber(arr,x));
         int result = countnumber(arr, x);
 
+
         System.out.println("Number of elements greater than " + x + " are: " + result);
 
     }
