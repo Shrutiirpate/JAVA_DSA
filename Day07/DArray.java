@@ -20,46 +20,46 @@ import java.util.Scanner;
 //    }
 //=---------------------------------------------------------------------------------------------------------------
 //Question2:-make method for print array easily,copy array from one to another and showoutput
-public class DArray {
-    //here we create method to print array
-    static void PrintArray(int[] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
-        }
-        System.out.println();
-    }
-
-    public static void main(String[] args) {
-        int[] arr = new int[5];
-        arr[0] = 5;
-        arr[1] = 6;
-        arr[2] = 7;
-        arr[3] = 8;
-        arr[4] = 9;
-
-        //print orignail array
-        System.out.println("Orignal Array");
-        PrintArray(arr);
-
-        //copying arr to arr2
-       // int[] arr_2 = arr;
-        int[] arr_2 = arr.clone();// using this we can print orginal value of 1st array
-        System.out.println("Copied array");
-        PrintArray(arr_2);
-
-        //changing some values of arr_2
-        arr_2[0] = 0;
-        arr_2[1] = 0;
-
-        //print orignal array arr
-        System.out.println("Orignal array after chnaging arr_2");
-        PrintArray(arr);
-
-        //printy arr_2 changes
-        System.out.println("Copied array after chnaging arr_2");
-        PrintArray(arr_2);
-    }
-}
+//public class DArray {
+//    //here we create method to print array
+//    static void PrintArray(int[] arr) {
+//        for (int i = 0; i < arr.length; i++) {
+//            System.out.print(arr[i] + " ");
+//        }
+//        System.out.println();
+//    }
+//
+//    public static void main(String[] args) {
+//        int[] arr = new int[5];
+//        arr[0] = 5;
+//        arr[1] = 6;
+//        arr[2] = 7;
+//        arr[3] = 8;
+//        arr[4] = 9;
+//
+//        //print orignail array
+//        System.out.println("Orignal Array");
+//        PrintArray(arr);
+//
+//        //copying arr to arr2
+//       // int[] arr_2 = arr;
+//        int[] arr_2 = arr.clone();// using this we can print orginal value of 1st array
+//        System.out.println("Copied array");
+//        PrintArray(arr_2);
+//
+//        //changing some values of arr_2
+//        arr_2[0] = 0;
+//        arr_2[1] = 0;
+//
+//        //print orignal array arr
+//        System.out.println("Orignal array after chnaging arr_2");
+//        PrintArray(arr);
+//
+//        //printy arr_2 changes
+//        System.out.println("Copied array after chnaging arr_2");
+//        PrintArray(arr_2);
+//    }
+//}
 //-------------------------------------------------------------------------------------------------------------------------
 //public class DArray {
 //    //here we create method to print array
@@ -95,4 +95,107 @@ public class DArray {
 //
 //    }
 //}
+//--------------------------------------------------------------------------------------------------------------------
+//Count reapeted number in an array ( 1 2 2 2 3) x=2 count 3
+//count the number of occurrences oa a perticular element x
+//public class DArray{
+//    static int  countnumber(int arr[], int x){
+//        int count = 0;
+//        for(int i = 0; i < arr.length; i++){
+//           if(arr[i]==x){
+//               count++;
+//           }
+//        }
+//        return count;
+//    }
+//
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        System.out.print("Enter Size of Array: ");
+//        int size = sc.nextInt();
+//        int []arr = new int[size];
+//
+//        System.out.println("Enter " + size + " Elements");
+//        for(int i=0; i<arr.length;i++){
+//            arr[i]=sc.nextInt();
+//        }
+//        System.out.print("Enter x: ");
+//        int x = sc.nextInt();
+//
+//        System.out.println("Count of x: "+ countnumber(arr,x));
+//
+//    }
+//}
+//--------------------------------------------------------------------------------------------------------------
+//Find the last occurence of an element x in a given array
+//public class DArray{
+//    static int LastOccurence(int arr[],int x){
+//        int LastIndex = -1;
+//        for(int i=0; i<arr.length;i++){
+//            if(arr[i]==x){
+//                LastIndex = i;
+//            }
+//        }
+//        return LastIndex;
+//    }
+//    static int  countnumber(int arr[], int x){
+//        int count = 0;
+//        for(int i = 0; i < arr.length; i++){
+//           if(arr[i]==x){
+//               count++;
+//           }
+//        }
+//        return count;
+//    }
+//
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        System.out.print("Enter Size of Array: ");
+//        int size = sc.nextInt();
+//        int []arr = new int[size];
+//
+//        System.out.println("Enter " + size + " Elements");
+//        for(int i=0; i<arr.length;i++){
+//            arr[i]=sc.nextInt();
+//        }
+//        System.out.print("Enter x: ");
+//        int x = sc.nextInt();
+//
+//        System.out.println("Count of x: "+ countnumber(arr,x));
+//        System.out.println("LastIndex of x: "+ LastOccurence(arr,x));
+//
+//    }
+//}
+//count the number of elements strictly greater than value of x
+public class DArray{
+    static int  countnumber(int arr[], int x){
+        int count = 0;
+        for(int i = 0; i < arr.length; i++){
+            if(arr[i]>x){
+                count++;
+            }
+        }
+        return count;
+    }
 
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter Size of Array: ");
+        int size = sc.nextInt();
+        int []arr = new int[size];
+
+        System.out.println("Enter " + size + " Elements");
+        for(int i=0; i<arr.length;i++){
+            arr[i]=sc.nextInt();
+        }
+        System.out.print("Enter x: ");
+        int x = sc.nextInt();
+
+
+        //System.out.println("Count of X "+ countnumber(arr,x));
+        int result = countnumber(arr, x);
+
+        System.out.println("Number of elements greater than " + x + " are: " + result);
+
+    }
+}
