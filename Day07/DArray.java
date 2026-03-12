@@ -167,16 +167,73 @@ import java.util.Scanner;
 //    }
 //}
 //count the number of elements strictly greater than value of x
+//public class DArray{
+//    static int  countnumber(int arr[], int x){
+//        int count = 0;
+//        for(int i = 0; i < arr.length; i++){
+//            if(arr[i] > x){
+//                count++;
+//            }
+//        }
+//        return count;
+//    }
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        System.out.print("Enter Size of Array: ");
+//        int size = sc.nextInt();
+//        int []arr = new int[size];
+//
+//        System.out.println("Enter " + size + " Elements");
+//        for(int i=0; i<arr.length;i++){
+//            arr[i]=sc.nextInt();
+//        }
+//        System.out.print("Enter x: ");
+//        int x = sc.nextInt();
+//
+//        System.out.println("Number of elements greater than " + x + " are: " +  countnumber(arr, x));
+//
+//    }
+//}
+//----------------------------------------------------------------------------------------------------------------
+//Check if the given array is sorted or not
+//public class DArray{
+//    static boolean checksorted(int []arr){
+//        boolean check = true;
+//        for(int i = 1; i<arr.length;i++){
+//            if(arr[i] < arr[i-1]){
+//                check = false;
+//                break;
+//            }
+//        }
+//        return check;
+//    }
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        System.out.print("Enter Size of Array: ");
+//        int size = sc.nextInt();
+//        int []arr = new int[size];
+//
+//        System.out.println("Enter " + size + " Elements");
+//        for(int i=0; i<arr.length;i++){
+//            arr[i]=sc.nextInt();
+//        }
+//        System.out.println("Given number sorted: "+ checksorted(arr));
+//    }
+//}
+//----------------------------------------------------------------------------------------------------------------
+//sorted and and find smallest and lasegest element
+import java.util.Arrays;
 public class DArray{
-    static int  countnumber(int arr[], int x){
-        int count = 0;
-        for(int i = 0; i < arr.length; i++){
-            if(arr[i]>x){
-                count++;
-            }
+    static int[] soretedArray(int []arr){
+        Arrays.sort(arr);
+        int[]ans = {arr[0], arr[arr.length-1]};
+        return ans;
+
         }
-        return count;
-    }
+//        for(int i=0; i<arr.length; i++){ //using this we can creat array
+//            System.out.println(arr[i]);
+//        }
+//        return arr;
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -188,15 +245,12 @@ public class DArray{
         for(int i=0; i<arr.length;i++){
             arr[i]=sc.nextInt();
         }
-        System.out.print("Enter x: ");
-        int x = sc.nextInt();
-
-
-        //System.out.println("Count of X "+ countnumber(arr,x));
-        int result = countnumber(arr, x);
-
-
-        System.out.println("Number of elements greater than " + x + " are: " + result);
+        // sortedArray(arr);
+        int [] ans = soretedArray(arr);
+        System.out.println("Samllest: " + arr[0]);
+        System.out.println("Largest: " + ans[1]);
 
     }
 }
+
+
