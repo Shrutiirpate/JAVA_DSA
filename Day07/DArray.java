@@ -234,7 +234,6 @@ public class DArray{
 //            System.out.println(arr[i]);
 //        }
 //        return arr;
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter Size of Array: ");
