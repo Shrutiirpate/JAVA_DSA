@@ -2,35 +2,149 @@ package Day07;
 
 import java.util.Scanner;
 
+//public class ArrayProblems {
+//    //Find the total number of pairs in the array whose sum is equal to the given value x
+//    static int pairSum(int[] arr, int target) {
+//        int ans = 0;
+//
+//        for (int i = 0; i < arr.length; i++) { //here we print 1st number
+//            for (int j = i + 1; j < arr.length; j++) {//second
+//                if (arr[i] + arr[j] == target) {
+//                    ans++;
+//                }
+//            }
+//        }
+//            return ans;
+//        }
+//        public static void main (String[]args){
+//            Scanner sc = new Scanner(System.in);
+//            System.out.println("Enter size of a Array: ");
+//            int size = sc.nextInt();
+//            int[] arr = new int[size];
+//
+//            System.out.println("Enter " + size + " Elements");
+//            for (int i = 0; i < arr.length; i++) {
+//                arr[i] = sc.nextInt();
+//            }
+//
+//            System.out.println("Enter target sum: ");
+//            int target = sc.nextInt();
+//
+//            System.out.println("total pair sum are: " + (pairSum(arr, target)));
+//        }
+//
+//    }
+//--------------------------------------------------------------------------------------------------------------------
+//Q2-count the number of triplets whose sum is equal to the given value x
+//public class ArrayProblems {
+//    //Find the total number of pairs in the array whose sum is equal to the given value x
+//    static int pairSum(int[] arr, int target) {
+//        int ans = 0;
+//
+//        for (int i = 0; i < arr.length; i++) { //here we print 1st number
+//            for (int j = i + 1; j < arr.length; j++) {//second
+//                for (int r = j + 1; r < arr.length; r++) {
+//                    if (arr[i] + arr[j] + arr[r] == target) {
+//                        ans++;
+//                    }
+//                }
+//            }
+//        }
+//        return ans;
+//    }
+//    public static void main (String[]args){
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter size of a Array: ");
+//        int size = sc.nextInt();
+//        int[] arr = new int[size];
+//
+//        System.out.println("Enter " + size + " Elements");
+//        for (int i = 0; i < arr.length; i++) {
+//            arr[i] = sc.nextInt();
+//        }
+//
+//        System.out.println("Enter target sum: ");
+//        int target = sc.nextInt();
+//
+//        System.out.println("total pair sum are: " + (pairSum(arr, target)));
+//    }
+//
+//}
+//---------------------------------------------------------------------------------------------------------------------
+//Q3:-Find the unique number in a given array where all the elements are being repeated twice with one value being uniquw
+//public class ArrayProblems {
+//    //Find the total number of pairs in the array whose sum is equal to the given value x
+//    static int FindUniquenum(int[] arr) {
+//        int n = arr.length;
+//
+//        for(int i = 0; i < n; i++){
+//            for(int j = i+1; j<n; j++){
+//                if(arr[i] == arr[j]){
+//                    arr[i] = -1;
+//                    arr[j] = -1;
+//                }
+//            }
+//        }
+//        int ans = -1;
+//        for(int i = 0; i < n; i++){
+//            if(arr[i]>0){
+//                ans = arr[i];
+//            }
+//        }
+//        return ans;
+//    }
+//
+//    public static void main (String[]args){
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter size of a Array: ");
+//        int size = sc.nextInt();
+//        int[] arr = new int[size];
+//
+//        System.out.println("Enter " + size + " Elements");
+//        for (int i = 0; i < arr.length; i++) {
+//            arr[i] = sc.nextInt();
+//        }
+//
+//        System.out.println("Uniques number is : " + FindUniquenum(arr));
+//    }
+//
+//}
+//--------------------------------------------------------------------------------------------------------------------
+// Q4:- Find the second largest element in the given array
 public class ArrayProblems {
-    //Find the total number of pairs in the array whose sum is equal to the given value x
-    static int pairSum(int[] arr, int target) {
-        int ans = 0;
-
-        for (int i = 0; i < arr.length; i++) { //here we print 1st number
-            for (int j = i + 1; j < arr.length; j++) {//second
-                if (arr[i] + arr[j] == target) {
-                    ans++;
-                }
+    static int FindMax(int[] arr) {
+        int MAX = Integer.MIN_VALUE;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > MAX) {
+                MAX = arr[i];
             }
         }
-            return ans;
-        }
-        public static void main (String[]args){
-            Scanner sc = new Scanner(System.in);
-            System.out.println("Enter size of a Array: ");
-            int size = sc.nextInt();
-            int[] arr = new int[size];
-
-            System.out.println("Enter " + size + " Elements");
-            for (int i = 0; i < arr.length; i++) {
-                arr[i] = sc.nextInt();
-            }
-
-            System.out.println("Enter target sum: ");
-            int target = sc.nextInt();
-
-            System.out.println("total pair sum are: " + (pairSum(arr, target)));
-        }
-
+        return MAX;
     }
+    static int FindSecondMax(int[] arr) {
+        int MAX = FindMax(arr);
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == MAX) {
+                arr[i] = Integer.MIN_VALUE;
+            }
+        }
+        int seccondMax = FindMax(arr);
+
+        return seccondMax;
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter size of a Array: ");
+        int size = sc.nextInt();
+        int[] arr = new int[size];
+
+        System.out.println("Enter " + size + " Elements");
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = sc.nextInt();
+        }
+        System.out.println("Second MAX value is : " + FindSecondMax(arr));
+    }
+}
+//----------------------------------------------------------------------------------------------------------------------
+
+
