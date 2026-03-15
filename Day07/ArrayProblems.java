@@ -111,26 +111,118 @@ import java.util.Scanner;
 //}
 //--------------------------------------------------------------------------------------------------------------------
 // Q4:- Find the second largest element in the given array
+//public class ArrayProblems {
+//    static int FindMax(int[] arr) {
+//        int MAX = Integer.MIN_VALUE;
+//        for (int i = 0; i < arr.length; i++) {
+//            if (arr[i] > MAX) {
+//                MAX = arr[i];
+//            }
+//        }
+//        return MAX;
+//    }
+//    static int FindSecondMax(int[] arr) {
+//        int MAX = FindMax(arr);
+//        for (int i = 0; i < arr.length; i++) {
+//            if (arr[i] == MAX) {
+//                arr[i] = Integer.MIN_VALUE;
+//            }
+//        }
+//        int seccondMax = FindMax(arr);
+//
+//        return seccondMax;
+//    }
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter size of a Array: ");
+//        int size = sc.nextInt();
+//        int[] arr = new int[size];
+//
+//        System.out.println("Enter " + size + " Elements");
+//        for (int i = 0; i < arr.length; i++) {
+//            arr[i] = sc.nextInt();
+//        }
+//        System.out.println("Second MAX value is : " + FindSecondMax(arr));
+//    }
+//}
+//----------------------------------------------------------------------------------------------------------------------
+//Q5:- given an array 'a' consisting of an integer return the first value that is repeating in this array. if the no value being repeated,return-1
+//public class ArrayProblems {
+//    static int firstsearchingnum(int[] arr) {
+//        int n = arr.length;
+//        for(int i = 0; i < n; i++){
+//            for(int j = i+1; j < n; j++){
+//                if(arr[i] == arr[j]){
+//                    return(arr[i]);//After return method end here when we founf our answer we don't want we go for next iteration
+//                }
+//            }
+//        }
+//        return -1; //if there is no reapeting no. it print -1
+//    }
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter size of a Array: ");
+//        int size = sc.nextInt();
+//        int[] arr = new int[size];
+//
+//        System.out.println("Enter " + size + " Elements");
+//        for (int i = 0; i < arr.length; i++) {
+//            arr[i] = sc.nextInt();
+//        }
+//        System.out.println("First Repeating value is: " + firstsearchingnum(arr));
+//    }
+//}
+//------------------------------------------------------------------------------------------------------------------------------
+//Q5:- given an array 'a' consisting of an integer return the Last value that is repeating in this array. if the no value being repeated,return-1(Assignment Question)
+//public class ArrayProblems {
+//    static int Lastsearchingnum(int[] arr) {
+//        int n = arr.length;
+//        int Last = -1;
+//
+//        for(int i = 0; i < n; i++){
+//            for(int j = i+1; j < n; j++){
+//                if(arr[i] == arr[j]){
+//                    Last = arr[i];
+//                }
+//            }
+//        }
+//        return Last;
+//    }
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter size of a Array: ");
+//        int size = sc.nextInt();
+//        int[] arr = new int[size];
+//
+//        System.out.println("Enter " + size + " Elements");
+//        for (int i = 0; i < arr.length; i++) {
+//            arr[i] = sc.nextInt();
+//        }
+//        System.out.println("Last Repeating value is: " +Lastsearchingnum(arr));
+//    }
+//}
+//------------------------------------------------------------------------------------------------------------------
+//Q4:- Find the second Smallest element in the given array
 public class ArrayProblems {
-    static int FindMax(int[] arr) {
-        int MAX = Integer.MIN_VALUE;
+    static int FindMIN(int[] arr) {
+        int MIN = Integer.MAX_VALUE;
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i] > MAX) {
-                MAX = arr[i];
+            if (arr[i] < MIN) {
+                MIN = arr[i];
             }
         }
-        return MAX;
+        return MIN;
     }
-    static int FindSecondMax(int[] arr) {
-        int MAX = FindMax(arr);
+    static int FindSecondMIN(int[] arr) {
+        int MIN = FindMIN(arr);
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i] == MAX) {
-                arr[i] = Integer.MIN_VALUE;
+            if (arr[i] == MIN) {
+                arr[i] = Integer.MAX_VALUE;
             }
         }
-        int seccondMax = FindMax(arr);
+        int seccondMIN = FindMIN(arr);
 
-        return seccondMax;
+        return seccondMIN;
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -142,9 +234,6 @@ public class ArrayProblems {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = sc.nextInt();
         }
-        System.out.println("Second MAX value is : " + FindSecondMax(arr));
+        System.out.println("Second MIN value is : " + FindSecondMIN(arr));
     }
 }
-//----------------------------------------------------------------------------------------------------------------------
-
-
