@@ -217,7 +217,7 @@ public class ArrayProblems {
         int MIN = FindMIN(arr);
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == MIN) {
-                arr[i] = Integer.MAX_VALUE;
+                arr[i] = Integer.MAX_VALUE; //while using this line of code array becomes[ 2147483647 2 3 4 5]
             }
         }
         int seccondMIN = FindMIN(arr);
