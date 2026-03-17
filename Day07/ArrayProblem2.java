@@ -82,13 +82,12 @@ package Day07;
 //    int a = 9;
 //    int b = 3;
 //    int [] arr = {1,2, 3, 4, 5};
-//    int[]ans = ReverseArray(arr);
+//    int [] ans = ReverseArray(arr);
 //    PrintArray(ans);
 //    }
 //}
 //--------------------------------------------------------------------------------------------------------------------
 //Reverse an array consisting of integer values(Taking input from user)
-import java.util.Scanner;
 
 //public class ArrayProblem2{
 //    static void PrintArray(int[]arr){
@@ -134,6 +133,98 @@ import java.util.Scanner;
 //}
 //----------------------------------------------------------------------------------------------------------------------
 //Reverse array without using another array
+//public class ArrayProblem2{
+//    static void PrintArray(int[]arr){
+//        for(int i = 0; i < arr.length; i++){
+//            System.out.print(arr[i] + " ");
+//        }
+//        System.out.print(" ");
+//    }
+//    static void swapArray(int[]arr, int i, int j){
+//        arr[i] = arr[i] + arr[j];
+//        arr[j] = arr[i] - arr[j];
+//        arr[i] = arr[i] - arr[j];
+//    }
+
+import java.util.Scanner;
+
+////    static void ReverseArray(int[]arr){
+////        int i = 0, j = arr.length - 1;
+////        while(i < j){
+////            swapArray(arr, i, j);
+////            i++;
+////            j--;
+////        }
+////    }
+//    //using fro loop
+//    static void ReverseArray(int[]arr){
+//        int j = arr.length-1;
+//
+//        for(int i = 0; i < j; i++){
+//            swapArray(arr, i , j);
+//                j--;
+//        }
+//    }
+//    public static void main(String[] args) {
+//       int[] arr = {1, 2, 3, 4, 5};
+//
+//        ReverseArray(arr);
+//        PrintArray(arr);
+//    }
+//}
+//---------------------------------------------------------------------------------------------------------------------------
+//rotate the given array 'a' by k steps where k is non-negative.note-k can be greater than n as well
+//public class ArrayProblem2{
+//    static void PrintArray(int[]arr){
+//        for(int i = 0; i < arr.length; i++){
+//            System.out.print(arr[i] + " ");
+//        }
+//        System.out.print(" ");
+//    }
+//    static int[] rotate(int[]arr, int k){
+//        int n = arr.length;
+//        k = k % n; // k=7 and n=5 7=7%5=2 it means it rotated 2 times
+//
+//        int [] ans = new int[n];
+//        int j = 0;
+//
+//        for(int i = n - k; i < n; i++){ // n for array and k for rotation
+//            ans[j++] = arr[i];
+//        }
+//        for(int i = 0; i < n - k; i++){
+//            ans[j++] = arr[i];
+//        }
+//        return ans;
+//    }
+//
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        System.out.print("Enter size of array: ");
+//        int n = sc.nextInt();
+//        int [] arr = new int[n];
+//
+//        System.out.print("Enter " + n + " Elements ");
+//        for(int i = 0; i<n; i++){
+//            arr[i] = sc.nextInt();
+//        }
+//
+//        System.out.print("Enter k: ");
+//        int k = sc.nextInt();
+//
+//        System.out.print("Orignal array: ");
+//        PrintArray(arr);
+//
+//        System.out.println(" ");
+//
+//        int[]ans = rotate(arr ,k);
+//
+//        System.out.print("Array after rotate: ");
+//        PrintArray(ans);
+//
+//    }
+//}
+//------------------------------------------------------------------------------------------------------------------------
+//Rotate the given array 'a' by K steps, where K is non-negative without using extra space. Note- k can be greater than n as well
 public class ArrayProblem2{
     static void PrintArray(int[]arr){
         for(int i = 0; i < arr.length; i++){
@@ -141,24 +232,64 @@ public class ArrayProblem2{
         }
         System.out.print(" ");
     }
-    static void swapArray(int[]arr, int i, int j){
-        arr[i] = arr[i] + arr[j];
-        arr[j] = arr[i] - arr[j];
-        arr[i] = arr[i] - arr[j];
-    }
-    static void ReverseArray(int[]arr){
-        int i = 0, j = arr.length - 1;
-        while(i < j){
-            swapArray(arr, i, j);
-            i++;
-            j--;
-        }
-    }
-    public static void main(String[] args) {
-       int[] arr = {1, 2, 3, 4, 5,6};
 
-        ReverseArray(arr);
+//        static void ReverseArray(int[]arr ){
+//            int i = 0, j = arr.length - 1;
+//            while(i < j){
+//                swap(arr, i, j);
+//                i++;
+//                j--;
+//            }
+//        }
+//    static int[] RotatedInPlace(int[]arr, int k){
+//        int n = arr.length;
+//        k = k % n;
+//
+//        ReverseArray(arr, 0, n-k-1);
+//        ReverseArray(arr, n-k, n-1);
+//        ReverseArray(arr, 0, n-1);
+//
+//    }
+
+    static int[] rotate(int[]arr, int k){
+        int n = arr.length;
+        k = k % n; // k=7 and n=5 7=7%5=2 it means it rotated 2 times
+
+        int [] ans = new int[n];
+        int j = 0;
+
+        for(int i = n - k; i < n; i++){ // n for array and k for rotation
+            ans[j++] = arr[i];
+        }
+        for(int i = 0; i < n - k; i++){
+            ans[j++] = arr[i];
+        }
+        return ans;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter size of array: ");
+        int n = sc.nextInt();
+        int [] arr = new int[n];
+
+        System.out.print("Enter " + n + " Elements ");
+        for(int i = 0; i<n; i++){
+            arr[i] = sc.nextInt();
+        }
+
+        System.out.print("Enter k: ");
+        int k = sc.nextInt();
+
+        System.out.print("Orignal array: ");
         PrintArray(arr);
+
+        System.out.println(" ");
+
+        int[]ans = rotate(arr ,k);
+
+        System.out.print("Array after rotate: ");
+        PrintArray(ans);
+
     }
 }
-
