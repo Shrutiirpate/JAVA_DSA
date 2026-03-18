@@ -225,23 +225,27 @@ import java.util.Scanner;
 //}
 //------------------------------------------------------------------------------------------------------------------------
 //Rotate the given array 'a' by K steps, where K is non-negative without using extra space. Note- k can be greater than n as well
-public class ArrayProblem2{
-    static void PrintArray(int[]arr){
-        for(int i = 0; i < arr.length; i++){
-            System.out.print(arr[i] + " ");
-        }
-        System.out.print(" ");
-    }
-
-//        static void ReverseArray(int[]arr ){
-//            int i = 0, j = arr.length - 1;
+//public class ArrayProblem2{
+//    static void PrintArray(int[]arr){
+//        for(int i = 0; i < arr.length; i++){
+//            System.out.print(arr[i] + " ");
+//        }
+//        System.out.print(" ");
+//    }
+//    static void swap(int[]arr, int i, int j){
+//        int temp = arr[i];
+//        arr[i] = arr[j];
+//        arr[j] = temp;
+//
+//    }
+//        static void ReverseArray(int[]arr, int i,int j ){
 //            while(i < j){
 //                swap(arr, i, j);
 //                i++;
 //                j--;
 //            }
 //        }
-//    static int[] RotatedInPlace(int[]arr, int k){
+//    static void RotatedInPlace(int[]arr, int k){
 //        int n = arr.length;
 //        k = k % n;
 //
@@ -250,22 +254,44 @@ public class ArrayProblem2{
 //        ReverseArray(arr, 0, n-1);
 //
 //    }
+//
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        System.out.print("Enter size of array: ");
+//        int n = sc.nextInt();
+//        int [] arr = new int[n];
+//
+//        System.out.print("Enter " + n + " Elements ");
+//        for(int i = 0; i<n; i++){
+//            arr[i] = sc.nextInt();
+//        }
+//
+//        System.out.print("Enter k: ");
+//        int k = sc.nextInt();
+//
+//        System.out.print("Orignal array: ");
+//        PrintArray(arr);
+//
+//        RotatedInPlace(arr , k); // we called this method in end that why output change in one aaray
+//
+//        System.out.println(" ");
+//
+//        System.out.print("Array after rotate: ");
+//        PrintArray(arr);
+//    }
+//}
+//-----------------------------------------------------------------------------------------------------------------
+  // Given Q quesries, check if the given number is present in the array or not,Note- values of all elements in the array is less than 10 to the power 5.
+public class ArrayProblem2{
+  static int[] makeFrequencyArray(int[] arr){
+      int [] freq = new int[100005];//here we create frequency array up to 100005(10 to the power 5)
 
-    static int[] rotate(int[]arr, int k){
-        int n = arr.length;
-        k = k % n; // k=7 and n=5 7=7%5=2 it means it rotated 2 times
-
-        int [] ans = new int[n];
-        int j = 0;
-
-        for(int i = n - k; i < n; i++){ // n for array and k for rotation
-            ans[j++] = arr[i];
-        }
-        for(int i = 0; i < n - k; i++){
-            ans[j++] = arr[i];
-        }
-        return ans;
-    }
+      for(int i = 0; i < arr.length; i++){
+          //freq[arr[i]]++;
+          freq[arr[i]] = freq[arr[i]] + 1;
+      }
+      return freq;
+  }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -277,19 +303,20 @@ public class ArrayProblem2{
         for(int i = 0; i<n; i++){
             arr[i] = sc.nextInt();
         }
+        int [] freq = makeFrequencyArray(arr);
 
-        System.out.print("Enter k: ");
-        int k = sc.nextInt();
+        System.out.print("Enter number of quesries: ");
+        int q = sc.nextInt();
 
-        System.out.print("Orignal array: ");
-        PrintArray(arr);
-
-        System.out.println(" ");
-
-        int[]ans = rotate(arr ,k);
-
-        System.out.print("Array after rotate: ");
-        PrintArray(ans);
-
+        while(q > 0){
+            System.out.println("Enter number to be searched: ");
+            int x = sc.nextInt();
+            if(freq[x] > 0){
+                System.out.println("YES");
+            }else{
+                System.out.println("NO");
+            }
+            q--;
+        }
     }
 }
