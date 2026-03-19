@@ -170,9 +170,9 @@ package Day07;
 //    }
 //}
 //---------------------------------------------------------------------------------------------
-//(Remaining dry run)
+//gjiven an integer array 'a' sorted in non-decreasinf order, return an array
+//of the square of each numbersorted in non-decresing order.
 import java.util.Scanner;
-
 public class TwoPointerArray {
 
     static void PrintArray(int[] arr) {
@@ -187,27 +187,33 @@ public class TwoPointerArray {
         arr[left] = arr[right];
         arr[right] = temp;
     }
+    static void ReverseArray(int[]arr, int left,int right ){
+        while(left < right){
+            swap(arr, left, right);
+            left++;
+            right--;
+        }
+    }
 
-    static int[] SortedSquare(int[] arr) {
+    static int[] SortedSquare(int[]arr){
         int n = arr.length;
         int left = 0, right = n - 1;
-
-        int[] ans = new int[n];
+        int [] ans = new int[n];
         int k = 0;
 
-        while (left <= right) {
-            if (Math.abs(arr[left]) > Math.abs(arr[right])) {
+        while(left <= right){
+            if(Math.abs(arr[left]) > Math.abs(arr[right])){
                 ans[k] = arr[left] * arr[left];
-                k++;
-                left++;
-            } else {
-                ans[k++] = arr[right] * arr[right];
-                right--;
+                        k++;
+                        left++;
+                }else{
+                    ans[k] = arr[right] * arr[right];
+                    k++;
+                    right--;
+                }
             }
-        }
         return ans;
-
-    }
+        }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -221,12 +227,15 @@ public class TwoPointerArray {
         }
 
         System.out.print("Orignal array: ");
-        PrintArray(arr);
+        TwoPointerArray.PrintArray(arr);
 
         int[] ans = SortedSquare(arr);
 
         System.out.print("After sorted array: ");
         PrintArray(ans);
-    }
 
+        System.out.print("After reverse array: ");
+        ReverseArray(ans, 0, ans.length - 1);
+        PrintArray(ans);
+    }
 }
