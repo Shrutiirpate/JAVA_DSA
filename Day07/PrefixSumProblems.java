@@ -143,6 +143,7 @@ public class PrefixSumProblems{
         System.out.print("Enter size of array: ");
         int size = sc.nextInt();
         int [] arr = new int[size + 1];
+        
 
         System.out.print("Enter " + size + " Elements ");
         for(int i = 1; i < arr.length; i++){
