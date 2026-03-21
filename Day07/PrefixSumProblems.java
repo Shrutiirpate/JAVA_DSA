@@ -99,7 +99,6 @@ package Day07;
 //}
 //-----------------------------------------------------------------------------------------------------------------------------
 //check we can partition the array into two subarray with equal sum more formally, check that the prefix sum of a part of the array is equal to the suffix sum if the array
-
 import java.util.Scanner;
 public class PrefixSumProblems{
 
