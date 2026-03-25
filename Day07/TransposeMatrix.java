@@ -10,8 +10,8 @@ public class TransposeMatrix {
             }
             System.out.println();
         }
-
     }
+    //Using another Array
 //    static int[][] FindTransposeMatrix(int[][]matrix , int r, int c){
 //        int [][] ans = new int[c][r];
 //
@@ -22,6 +22,7 @@ public class TransposeMatrix {
 //        }
 //        return ans;
 //    }
+    //without using another array
     static void Transpose(int [][]matrix, int r, int c) {
         for (int i = 0; i < c; i++) {
             for (int j = 0; j < r; j++) {
