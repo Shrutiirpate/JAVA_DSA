@@ -49,8 +49,6 @@ public class TransposeMatrix {
                     matrix[i][j] = sc.nextInt();
                 }
             }
-
-
         System.out.println("Input matrix: ");
         PrintMatrix(matrix);
 
