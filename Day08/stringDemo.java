@@ -2,7 +2,7 @@ package Day08;
 
 public class stringDemo {
     public static void main(String[] args) {
-        String name = "ABC";
+        String name = "Shruti Irpate";
         String Reverse = "";
         char ch;
 

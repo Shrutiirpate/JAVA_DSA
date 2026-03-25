@@ -105,16 +105,22 @@ public class TwoDArrayProblems {
         }
     }
     static void multiply(int[][]a, int r1, int c1, int[][]b, int r2, int c2){
-//        if(r1 != r2 || c1 != c2){
-//            System.out.println("Wrong Input- Addition not possible");
-//            return;
-//        }
-        int [][] Multiplication = new int[r1][c1];
-        for(int i = 0; i < r1; i++){
-            for(int j = 0; j < c1; j++){
-                Multiplication[i][j] =a[i][j] * b[i][j];
+        if(c1 != r2) {
+            System.out.println("Wrong Input- Addition not possible");
+            return;
+        }
+        int [][] Multiplication = new int[r1][c2];
+        for(int i = 0; i < r1; i++){ //row number
+            for(int j = 0; j < c2; j++){ //col number
+                for(int k = 0; k < c1; k++){ // c1 and r1 sa,e pahije tr aapn ithe c1 pn lihu shkto nhi tr r2 pn
+
+                    //mul[i][j] += ith row of a * jth col of b
+                    Multiplication[i][j] += a[i][k] * b[k ][j];
+                }
+
             }
         }
+        System.out.println("Multiplication of 2 Matrices: ");
         PrintMatrix(Multiplication);
     }
 
@@ -134,7 +140,7 @@ public class TwoDArrayProblems {
         System.out.println("Enter number of row and col for matrix 2: ");
         int r2 = sc.nextInt();
         int c2 = sc.nextInt();
-        int[][] b = new int[r1][c1];
+        int[][] b = new int[r2][c2];
 
         System.out.println("Enter Elements");
         for(int i = 0; i < r2; i++){
