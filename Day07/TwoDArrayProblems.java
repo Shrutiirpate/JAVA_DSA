@@ -123,7 +123,6 @@ public class TwoDArrayProblems {
         System.out.println("Multiplication of 2 Matrices: ");
         PrintMatrix(Multiplication);
     }
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter number of row and col for matrix 1: ");
