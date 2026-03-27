@@ -199,8 +199,6 @@ public class TransposeMatrix {
         int[][] ans = pascal(n);
         PrintPascal(ans);
     }
-
-
 }
 
 
