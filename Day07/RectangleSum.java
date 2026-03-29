@@ -49,7 +49,6 @@ public class RectangleSum {
         }
         return sum;
     }
-
     static void findPrefixSumofMatrix(int[][] matrix){
       int r = matrix.length;
       int c = matrix[0].length;
@@ -60,7 +59,6 @@ public class RectangleSum {
                 matrix[i][j] += matrix[i][j - 1];
             }
         }
-
     }
     static int findSum2(int[][]matrix, int l1, int l2, int r1, int r2){
         int sum = 0;
