@@ -1,6 +1,7 @@
 package Day07;
 
 import java.util.Scanner;
+//First Approach
 
 //public class RectangleSum {
 //    static int findSum(int[][]matrix, int l1, int l2, int r1, int r2){
@@ -37,6 +38,7 @@ import java.util.Scanner;
 //        System.out.println("Reatangle sum: " + findSum(matrix, l1, l2,r1,r2));
 //    }
 //}
+//-------------------------------------------------------------------------------------------------------------------------------------------
 //Second approch
 public class RectangleSum {
     //First Approch
