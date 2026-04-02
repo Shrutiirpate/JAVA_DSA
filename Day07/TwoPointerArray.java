@@ -204,16 +204,16 @@ public class TwoPointerArray {
         while(left <= right){
             if(Math.abs(arr[left]) > Math.abs(arr[right])){
                 ans[k] = arr[left] * arr[left];
-                        k++;
-                        left++;
-                }else{
-                    ans[k] = arr[right] * arr[right];
-                    k++;
-                    right--;
-                }
+                k++;
+                left++;
+            }else{
+                ans[k] = arr[right] * arr[right];
+                k++;
+                right--;
             }
-        return ans;
         }
+        return ans;
+    }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
