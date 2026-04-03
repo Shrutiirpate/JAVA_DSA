@@ -3,11 +3,11 @@ class ArrayExample {
     //SearchInIndex
     void searchIndex(){
         int [] index = { 1,2,5,7,9};
-        int x =5;
+        int x = 5;
 
         int ans = -1;
-        for(int i=0; i<index.length; i++){
-            if(index[i]==x){
+        for(int i = 0; i < index.length; i++){
+            if(index[i] == x){
                 ans = i;
             }
         }
@@ -17,10 +17,10 @@ class ArrayExample {
 
     //find Max number in a given array
     void maxArray(){
-        int [] aar2 = {1, 4 ,3 , 8,1};
+        int [] aar2 = {1, 4 ,3 , 8, 1};
         int ans = 0;
 
-        for(int i=0; i < aar2.length; i++){
+        for(int i = 0; i < aar2.length; i++){
             if(aar2[i] > ans){
                 ans = aar2[i];
 
