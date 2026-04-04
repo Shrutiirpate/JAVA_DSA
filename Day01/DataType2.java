@@ -41,7 +41,7 @@ public class DataType2 {
         short sh1 = 19;
         short sh2= 11;
 
-        int sh3 = sh1 + sh2;     // here we perform arithmetic operation like addition so java automatically converts short, byte,char into int.that's why here print additon of 19+11=30. it is called type promotion.
+        int sh3 = sh1 + sh2;     // here we perform arithmetic operation like addition so java automatically converts short,byte,char into int.that's why here print additon of 19+11=30. it is called type promotion.
         System.out.println(sh3); //30
 
         //short sh3 = sh1 + sh2; // it shows error because Even if both are short,Java automatically changes them into int while calculating.

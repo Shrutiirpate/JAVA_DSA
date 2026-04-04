@@ -22,7 +22,8 @@ public class C2WQuestons {
 //        System.out.println("Subtraction: " + (firstNum - secondNum));//15
 //        System.out.println("Multiplication: " + (firstNum * secondNum));//100
 //        System.out.println("Division: " + (firstNum / secondNum));//4
-//
+//------------------------------------------------------------------------------------------------------------------------------------
+
 //        //2. Write a program to compare two numbers using relational operators.
 //        //Your program should:
 //        //Compare whether the first number is greater than, less than, equal to, not equal to,
@@ -47,7 +48,7 @@ public class C2WQuestons {
 //        System.out.println( "noteqal "+ (numberfirst != numbersecond));//true
 //        System.out.println( "Greaterthaneuqalto "+ (numberfirst >= numbersecond));//true
 //        System.out.println( "lessthanequalto "+ (numberfirst <= numbersecond));//false
-//
+//-------------------------------------------------------------------------------------------------------------------------------
 //        //3. Write a program to demonstrate logical operators.
 //        //Your program should:
 //        //Perform logical AND, logical OR, and logical NOT operations on the given
@@ -68,7 +69,8 @@ public class C2WQuestons {
 //        System.out.println("Logical AND: " +(First || second));//true
 //        System.out.println( "Logical NOT for the first value: " + (!First));//false
 //        System.out.println("Logical NOT for the second value: " + (!second));//true
-//
+//----------------------------------------------------------------------------------------------------------------------------
+
 //        //4. Initialize two variables with numeric values.
 //        //Use compound assignment operators like +=, -=, *=, /=, %= to modify the values of
 //        //the variables.
