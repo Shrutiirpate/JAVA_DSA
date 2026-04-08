@@ -1,12 +1,14 @@
 package Day08;
 import java.util.*;
 
-public class StringBasics {
+public class BasicString {
     public static void main(String[] args) {
 //        Scanner sc = new Scanner(System.in);
 //        System.out.println("Enter String: ");
+
+        //next() and nextLine()
 //        String str = sc.nextLine();
-        //String str = sc.next(); //Print only single word
+//        String str = sc.next(); //Print only single word
 
 //        System.out.println(str);
 //        String str = "Shruti Irpate";
@@ -26,7 +28,7 @@ public class StringBasics {
         //indexOf()
         String str3 = "Shruti Rutu";
         int idx = str3.indexOf('u');
-        System.out.println(idx);//3 it give staring index where he find u
+        System.out.println(idx);//3 it gives staring index where find  u
 
         //compareTo()
         String STR = "DELLO";
@@ -34,6 +36,7 @@ public class StringBasics {
         System.out.println(STR.compareTo(GTR));// 4 if STR is greater than GTR it prints positive value
         // if STR and GTR is equal then output will be 0
         // if STR is less than GTR then it print Negative value
+
         //contains()
         String abc = "Hello shruti";
         System.out.println(abc.contains("ruti")); //true
