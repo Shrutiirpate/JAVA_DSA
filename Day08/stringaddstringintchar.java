@@ -49,10 +49,5 @@ public class stringaddstringintchar {
         System.out.println(shruti == pragati); //True == check address
         System.out.println(shruti == sami); // False
         System.out.println(shruti.equals(sami)); //True ,equals check content(String)
-
-
-
-
-
     }
 }
