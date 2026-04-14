@@ -58,14 +58,91 @@ public class core2webQuestions {
 //        System.out.println(str3 == str4);//true
 //        System.out.println(str3.equals(str4));//true
         //------------------------------------------------------------------------------------------------------------------------------------------------
+        //4)
+        //introduction to string buffer
+//        String str1 = "shruti";
+//        String str2 = "shruti";
+//        String str3 = new String("Shruti");
+//        String str4 = new String("shruti"); //they bith creater new object on heep area
+//
+//        System.out.println(str1 == str2);//true
+//        System.out.println(str3 == str4);//false
+        //------------------------------------------------------------------------------------------------------
+        //5)
+//        String str1 = "shashi";
+//        String str2 = "bagal";
+//
+//        System.out.println(str1); //shashi
+//        System.out.println(str2); //bagal
+//        System.out.println(str2 + "Core2Web"); //bagalCore2Web(direct append method ni change krto karan tostring tevha ch use mdhe yete jevha aaplya te string cha container mdhe store kra lagel
+//        System.out.println(str1); //shashi
+//        System.out.println(str2); //bagal
 
+//        //when we create string we can can not add another word to it even one charecter so that's why string is immutable
+//        String str1 = "Core2web";
+//        String str2 = "Shashi";
+//        String str3 = "Narhe";
+//
+//        System.out.println(System.identityHashCode(str1)); // 2065951873
+//        System.out.println(System.identityHashCode(str2)); // 1791741888
+//        System.out.println(System.identityHashCode(str3));  // 1595428806 (different address)
+//
+//        str3 = str3 + "IIT";
+//
+//        System.out.println(System.identityHashCode(str1)); // 2065951873
+//        System.out.println(System.identityHashCode(str2)); // 1791741888
+//        System.out.println(System.identityHashCode(str3)); // 1915910607
+        //-----------------------------------------------------------------------------------------------------------------------
+        //6)
+        //Strig = immutable(can not change)
+        //stringBuffer = mutable(can change)
+//        String str1 = "shruti";
+//        System.out.println(str1);
+//        System.out.println(System.identityHashCode(str1)); //1000 and then this object will taken by garbage collector(proper explain in book)
+//
+//        str1 = str1 + "Irpate";
+//        System.out.println(str1);
+//        System.out.println(System.identityHashCode(str1)); //2000
+        //---------------------------------------------------------------------------------------------------------------------
+        //7)StringBuffer(muttable)
+//        StringBuffer str1 = new StringBuffer("Shruti");
+//        StringBuffer str2 = new StringBuffer("Irpate");
+//
+//        System.out.println(str1);
+//        System.out.println(System.identityHashCode(str1)); //2065951873
+//        System.out.println(str2);
+//        System.out.println(System.identityHashCode(str2)); //1791741888
+//
+//        str1 = str1.append(str2);
+//        System.out.println(str1);
+//        System.out.println(System.identityHashCode(str1)); //2065951873
+//        System.out.println(str2);
+//        System.out.println(System.identityHashCode(str2)); //1791741888
+        //-------------------------------------------------------------------------------------------------------------
+        //stringbuffer has 16 charecter capacity,if capacity full then use formula-current capacity +1 *(2)
+//        StringBuffer sb1 = new StringBuffer();
+//        System.out.println(sb1); //-
+//        System.out.println(sb1.capacity()); //16
+//
+//        sb1 = sb1.append("core2web");
+//
+//        System.out.println(sb1);//core2web
+//        System.out.println(sb1.capacity()); //16
+//
+//        sb1 = sb1.append("Incubaters");
+//
+//        System.out.println(sb1); //core2webIncubaters
+//        System.out.println(sb1.capacity()); //34 internally they increased size of a stringbuffer
+        //-----------------------------------------------------------------------------------------------------
+        String str = "shruti";
 
+        StringBuffer sb = new StringBuffer(str); //shruti
 
+        sb.reverse(); //iturhs
 
+        str = sb.toString(); // iturhs //for converted from stringbuffer to string
 
-
-
-
+        System.out.println(str); //iturhs
 
     }
 }
