@@ -1,6 +1,6 @@
 package Day08;
 import java.util.*;
-public class stringgg {
+    public class RevisedString {
         public static void main(String[] args) {
 //        String str = "abc";
 //        str = str + "xyz";
@@ -51,5 +51,7 @@ public class stringgg {
             System.out.println(shruti.equals(sami)); //True ,equals check content(String)
         }
     }
+
+}
 
 }
