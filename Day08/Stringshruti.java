@@ -53,5 +53,3 @@ public class Stringshruti {
             System.out.println(shruti.equals(sami)); //True ,equals check content(String)
         }
     }
-
-}
