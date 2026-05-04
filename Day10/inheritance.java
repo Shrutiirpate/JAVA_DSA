@@ -17,7 +17,7 @@ public class inheritanceDemo {
     }
 
     class Main {
-        public static void main(String[] args) {
+        public void main(String[] args) {
             Dog d = new Dog();
             d.eat();   // inherited
             d.bark();  // own method
