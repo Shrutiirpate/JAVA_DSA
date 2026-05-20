@@ -153,7 +153,7 @@ package Day09;
 //    }
 //
 //    public static void main(String[] args) {
-//        DemoConstrucotr obj = new DemoConstrucotr(); //when we creat object value will be null and 0
+//        DemoConstrucotr obj = new DemoConstrucotr(); //when we creat object value will be null and 0 (constructor called automatically when object is created)
 //        DemoConstrucotr obj1 = new DemoConstrucotr();
 //
 //        obj.setvalues("Shruti" , 101);
