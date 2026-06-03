@@ -140,3 +140,9 @@ class child extends  parent{
     }
 
 }
+//This Keyword - This keyword is the reference variable that refers to the current object
+class test1{
+    int i;
+    
+
+}
