@@ -129,9 +129,11 @@ class child extends  parent{
         System.out.println("Child constryctor");
     }
     //Java secretly inserts:
+
+    //1. Call the Parent Constructor
     //class child extends parent {
     //    child() {
-    //        super();  // call Parent constructor
+    //        super();  // call Parent constructor. if we don't write this super() java automatically inserts super
     //        System.out.println("Child Constructor");
 
     public static void main(String[] args) {
@@ -140,6 +142,54 @@ class child extends  parent{
     }
 
 }
+//2)
+//2. Access Parent Class Variables
+class parent1{
+    int x = 20;
+
+//    void run(){
+//        System.out.println(super.x); //The error is because super can only be used inside a child class to refer to its parent.
+//        System.out.println(x);
+//    }
+}
+class child1 extends parent1{
+    int x = 40;
+
+    void run(){
+        System.out.println(super.x);
+        System.out.println(x);
+    }
+
+    public static void main(String[] args) {
+        child1 c = new child1();
+        c.run(); //20 40
+
+
+    }
+}
+//3
+//3. Access Parent Class Methods
+class shruti{
+    void show(){
+        System.out.println("Shruti Method");
+    }
+}
+class sanu extends shruti{
+    void show() {
+        System.out.println("Sanu method");
+    }
+    void display(){
+    super.show();
+    show();
+    }
+
+    public static void main(String[] args) {
+        sanu sh = new sanu();
+        sh.display(); //shruti method // sanu method
+    }
+}
+
+
 //This Keyword - This keyword is the reference variable that refers to the current object
 class test1{
     int i;
