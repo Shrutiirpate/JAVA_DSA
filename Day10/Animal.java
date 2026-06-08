@@ -110,7 +110,9 @@ class Manager extends Employee{
     }
 }
 //--------------------------------------------------------------------------------------------------------------------------------------------------------
-//Question 5: Constructor Inheritance
+//{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{SUPER KEYWORD}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}4
+
+// Question 5: Constructor Inheritance
 //Create a class Parent with a constructor that prints:
 //Parent Constructor
 //Create a class Child that extends Parent and has its own constructor printing:
@@ -188,8 +190,6 @@ class sanu extends shruti{
         sh.display(); //shruti method // sanu method
     }
 }
-
-
 //This Keyword - This keyword is the reference variable that refers to the current object
 class test1{
     int i;
@@ -200,3 +200,5 @@ class test1{
 class exampl{
 
 }
+
+//This keyword examples
